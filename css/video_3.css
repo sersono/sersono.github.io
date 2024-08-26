@@ -1,0 +1,239 @@
+/* Global */
+:root {
+    /* App Color */
+    --color-primary: var(--color-prussianblue);
+    --color-primary-variant: var(--color-skyblue);
+    --color-primary-dark: var(--color-dark-prussianblue);
+    --color-primary-mid: var(--color-dark-blue);
+    --color-primary-light: var(--color-blue);
+    --color-accent: var(--color-cyan);
+    --color-accent-variant: var(--color-orange);
+    --color-text: var(--color-light-black);
+    --color-text-light: var(--color-light-white);
+    
+    
+    /* color */
+    --color-prussianblue: #091427;
+    --color-skyblue: #cddefb;
+    --color-dark-prussianblue: #050a13;
+    --color-blue: #2250a2;
+    --color-dark-blue: #142b54;
+    --color-cyan: #03e8f9;
+    --color-orange: #ff4d00;
+    --color-black: #000000;
+    --color-light-black: #0e0e0e;
+    --color-white: #ffffff;
+    --color-light-white: #eeeeee;
+    --color-light-gray: #dddddd;
+    }
+    
+    
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    
+    body {
+        font-family: "Noto Sans KR", sans-serif;
+        margin: 0;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul {
+        margin: 0;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: var(--color-text);
+    }
+    
+    button {
+        background-color: transparent;
+        outline: 0;
+        border: 0;
+    }
+    
+    button:focus {
+        outline: 1px solid var(--color-accent);
+    }
+
+    /* Section Common */
+    .section {
+    padding: 6.25rem;
+    text-align: center;
+    margin: auto;
+    }
+
+    .subsection__container {
+    max-width: 1280px;
+    margin: auto;
+    }
+
+    .section__title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--color-text);
+    }
+
+    .section__subtitle {
+    font-size: 1.875rem;
+    font-weight: 500;
+    color: var(--color-text);
+    }
+
+    /* Video 03 */
+
+    .section__title {
+        margin-bottom: 6.25rem;
+    }
+
+    .video03 {
+        max-width: 72.5rem;
+        margin: auto;
+    }
+
+    .videowork__title {
+        font-size: 1.875rem;
+        font-weight: 500;
+        margin-top: 11.25rem;
+    }
+
+    .title__underline {
+        width: 25rem;
+        height: 0.313rem;
+        margin: auto;
+        margin-top: 0.625rem;
+        background-color: var(--color-accent);
+    }
+
+    .videowork__subtitle {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 1.875rem;
+    }
+
+    .videowork__description {
+        text-align: left;
+        margin-top: 3.125rem;
+    }
+
+    .description__heading {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+    
+    .description__body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        margin-top: 1.25rem;
+    }
+
+    .videowork__storyboard {
+        margin-top: 2.5rem;
+        text-align: left;
+    }
+
+    .storyboard__heading {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .storyboard__thumbnails {
+        margin-top: 1.25rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    .thumbnail {
+        text-align: center;
+    }
+
+    .thumbnail__caption {
+        font-size: 0.75rem;
+        font-weight: 400;
+        margin-top: 0.625rem;
+    }
+
+    /* Arrow up */
+
+    .arrow-up {
+        background-color: var(--color-primary);
+        position: fixed;
+        bottom: 3rem;
+        right: 3rem;
+        font-size: 3rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 4.5rem;
+        box-shadow: 5px 5px 0px 0px rgba(109,40,217);
+        transition: opacity 300ms ease-in;
+    }
+    
+    .arrow-up__icon {
+        color: var(--color-text-light);
+    }
+
+    /* Responsive */
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 3rem 2rem;
+    }
+
+    .section__title {
+        font-size: 2rem;
+    }
+
+    .section__subtitle {
+        font-size: 1.25rem;
+    }
+
+    #video03 {
+        padding: 2rem;
+    }
+
+    .video03 {
+        width: 100%;
+    }
+
+    .storyboard__thumbnails {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 4rem;
+    }
+
+    .thumbnail__caption {
+        display: inline-block;
+    }
+
+    .arrow-up {
+        font-size: 2rem;
+        width: 3rem;
+        height: 3rem;
+        line-height: 3rem;
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+
+
+}
